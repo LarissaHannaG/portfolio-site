@@ -61,3 +61,9 @@
      never as direct quotes (confidentiality)
 - Keep the same minimal, typography-led visual language across case
   study pages as the main site — no cards/heavy chrome
+
+## Skills Used formatting (case study pages)
+- Render as inline flowing tags/labels, not prose or a vertical list
+- Small text, light visual separation, wraps naturally
+- Keep consistent with minimal aesthetic — no heavy borders or backgrounds
+

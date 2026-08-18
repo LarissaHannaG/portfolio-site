@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import CaseStudy from './pages/CaseStudy'
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects/:slug" element={<CaseStudy />} />
       </Routes>
     </BrowserRouter>
   )
