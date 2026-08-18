@@ -41,3 +41,23 @@
   responsiveness and accessibility (respecting user font-size settings)
 - Test/consider mobile breakpoints for every section, not just desktop
 
+
+## Site architecture update
+- Site is now multi-page, not single-page: main page + one linked case
+  study page per project (4 total)
+- Requires React Router (or equivalent) for client-side routing —
+  still a static site, no backend/CMS
+- Main page: keeps short project teasers with a "Read case study →" link
+  to each project's dedicated page
+- Case study pages: each follows this consistent 6-section template,
+  in this order:
+  1. The Challenge — problem statement
+  2. My Role — what I specifically did
+  3. How I Approached the Problem — approach/process
+  4. The Outcome — the solution built AND its results/metrics together
+  5. Skills Used — tools/skills, more plainly stated than the narrative
+     sections
+  6. What Clients Loved — client feedback described in my own words,
+     never as direct quotes (confidentiality)
+- Keep the same minimal, typography-led visual language across case
+  study pages as the main site — no cards/heavy chrome
