@@ -26,7 +26,7 @@ function AccentSwitcher() {
           aria-label={`Switch accent color to ${color.name}`}
           aria-pressed={active.name === color.name}
           onClick={() => setActive(color)}
-          className={`rounded-full transition-all ${
+          className={`cursor-pointer rounded-full transition-all ${
             active.name === color.name ? "h-5 w-5" : "h-4 w-4"
           }`}
           style={{ backgroundColor: color.full }}
