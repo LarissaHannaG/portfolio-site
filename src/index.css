@@ -3,7 +3,9 @@
 @theme {
   --color-cream: #F7F3EC;
   --color-ink: #2B2B2B;
-  --color-accent: #0057FF;
+  --color-accent-light: #B8CCFF;
+  --color-accent-mid: #5C86FF;
+  --color-accent-full: #0057FF;
 }
 
 body {

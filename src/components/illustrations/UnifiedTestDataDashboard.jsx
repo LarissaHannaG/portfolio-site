@@ -8,9 +8,9 @@ function UnifiedTestDataDashboard(props) {
       {...props}
     >
       <rect width="600" height="400" fill="#FFFFFF" />
-      <circle cx="190" cy="230" r="150" fill="#D6E4FF" />
-      <circle cx="350" cy="190" r="110" fill="#6690FF" />
-      <circle cx="460" cy="110" r="55" fill="#0057FF" />
+      <circle cx="190" cy="230" r="150" style={{ fill: "var(--color-accent-light)" }} />
+      <circle cx="350" cy="190" r="110" style={{ fill: "var(--color-accent-mid)" }} />
+      <circle cx="460" cy="110" r="55" style={{ fill: "var(--color-accent-full)" }} />
     </svg>
   )
 }

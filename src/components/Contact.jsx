@@ -11,7 +11,7 @@ function Contact() {
       <div className="mt-6 flex items-center gap-8">
         <a
           href="mailto:larissa.guenther93@gmail.com"
-          className="text-lg font-medium text-accent underline underline-offset-4 hover:text-accent/70"
+          className="text-lg font-medium text-accent-full underline underline-offset-4 hover:text-accent-full/70"
         >
           Email
         </a>
@@ -19,7 +19,7 @@ function Contact() {
           href="https://www.linkedin.com/in/larissa-g%C3%BCnther-31a03b185/"
           target="_blank"
           rel="noreferrer"
-          className="text-lg font-medium text-accent underline underline-offset-4 hover:text-accent/70"
+          className="text-lg font-medium text-accent-full underline underline-offset-4 hover:text-accent-full/70"
         >
           LinkedIn
         </a>

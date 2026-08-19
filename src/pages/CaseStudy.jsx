@@ -5,7 +5,7 @@ import { illustrations } from "../components/illustrations";
 function Section({ label, children, spacing = "mt-10 pt-10" }) {
   return (
     <div className={spacing}>
-      <p className="text-sm font-medium tracking-wide text-accent">{label}</p>
+      <p className="text-sm font-medium tracking-wide text-accent-full">{label}</p>
       <div className="mt-4">{children}</div>
     </div>
   );
@@ -19,7 +19,7 @@ function AtAGlance({ outcome }) {
         {outcome.map((item) => (
           <span
             key={item}
-            className="inline-block w-fit bg-[#0057FF] px-2 py-1 text-sm font-medium leading-relaxed text-white"
+            className="inline-block w-fit bg-accent-full px-2 py-1 text-sm font-medium leading-relaxed text-white"
           >
             {item}
           </span>
@@ -32,7 +32,7 @@ function AtAGlance({ outcome }) {
 
   return (
     <div className="mt-6">
-      <span className="inline-block w-fit bg-[#0057FF] px-2 py-1 text-sm font-medium leading-relaxed text-white">
+      <span className="inline-block w-fit bg-accent-full px-2 py-1 text-sm font-medium leading-relaxed text-white">
         Ongoing
       </span>
     </div>
@@ -50,7 +50,7 @@ function CaseStudy() {
         <p className="text-lg text-ink/80">Project not found.</p>
         <Link
           to="/"
-          className="mt-4 inline-block text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
+          className="mt-4 inline-block text-sm font-medium text-accent-full underline underline-offset-4 hover:text-accent-full/70"
         >
           ← Back
         </Link>
@@ -62,7 +62,7 @@ function CaseStudy() {
     <section className="mx-auto max-w-3xl px-4 py-24">
       <Link
         to="/"
-        className="text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
+        className="text-sm font-medium text-accent-full underline underline-offset-4 hover:text-accent-full/70"
       >
         ← Back
       </Link>
@@ -118,7 +118,7 @@ function CaseStudy() {
             {project.skills.map((skill) => (
               <span
                 key={skill}
-                className="bg-[#D6E4FF] px-2 py-1 text-sm text-ink"
+                className="bg-accent-light px-2 py-1 text-sm text-ink"
               >
                 {skill}
               </span>

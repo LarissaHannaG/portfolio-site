@@ -8,9 +8,9 @@ function EnterpriseDesignSystem(props) {
       {...props}
     >
       <rect width="600" height="400" fill="#FFFFFF" />
-      <rect x="60" y="60" width="300" height="280" rx="44" fill="#D6E4FF" />
-      <rect x="260" y="140" width="260" height="220" rx="44" fill="#6690FF" />
-      <circle cx="470" cy="110" r="60" fill="#0057FF" />
+      <rect x="60" y="60" width="300" height="280" rx="44" style={{ fill: "var(--color-accent-light)" }} />
+      <rect x="260" y="140" width="260" height="220" rx="44" style={{ fill: "var(--color-accent-mid)" }} />
+      <circle cx="470" cy="110" r="60" style={{ fill: "var(--color-accent-full)" }} />
     </svg>
   )
 }

@@ -8,9 +8,9 @@ function AiPoweredDefectAnalysis(props) {
       {...props}
     >
       <rect width="600" height="400" fill="#FFFFFF" />
-      <circle cx="250" cy="220" r="170" fill="#D6E4FF" />
-      <rect x="350" y="80" width="220" height="180" rx="40" fill="#6690FF" />
-      <circle cx="470" cy="310" r="55" fill="#0057FF" />
+      <circle cx="250" cy="220" r="170" style={{ fill: "var(--color-accent-light)" }} />
+      <rect x="350" y="80" width="220" height="180" rx="40" style={{ fill: "var(--color-accent-mid)" }} />
+      <circle cx="470" cy="310" r="55" style={{ fill: "var(--color-accent-full)" }} />
     </svg>
   )
 }

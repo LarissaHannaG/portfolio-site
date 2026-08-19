@@ -35,7 +35,7 @@ function About() {
           ].map((specialty) => (
             <span
               key={specialty}
-              className="bg-[#D6E4FF] px-2 py-1 text-sm text-ink"
+              className="bg-accent-light px-2 py-1 text-sm text-ink"
             >
               {specialty}
             </span>
@@ -61,7 +61,7 @@ function About() {
           ].map((tool) => (
             <span
               key={tool}
-              className="bg-[#D6E4FF] px-2 py-1 text-sm text-ink"
+              className="bg-accent-light px-2 py-1 text-sm text-ink"
             >
               {tool}
             </span>

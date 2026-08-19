@@ -9,7 +9,7 @@ function Hero() {
       </p>
 
       <h1 className="mt-4 text-4xl font-medium tracking-tight text-ink sm:text-5xl">
-        Software Project Lead with <span className="text-accent">hands-on</span> design and engineering depth.
+        Software Project Lead with <span className="text-accent-full">hands-on</span> design and engineering depth.
       </h1>
 
       <p className="mt-6 text-lg leading-relaxed text-ink/80">
@@ -22,13 +22,13 @@ function Hero() {
       <div className="mt-10 flex items-center gap-8">
         <a
           href="#projects"
-          className="text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
+          className="text-sm font-medium text-accent-full underline underline-offset-4 hover:text-accent-full/70"
         >
           View Selected Works
         </a>
         <a
           href="#contact"
-          className="text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
+          className="text-sm font-medium text-accent-full underline underline-offset-4 hover:text-accent-full/70"
         >
           Get in Touch
         </a>

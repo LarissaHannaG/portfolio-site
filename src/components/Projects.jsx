@@ -32,7 +32,7 @@ function Projects() {
               </p>
               <Link
                 to={`/projects/${project.slug}`}
-                className="mt-4 inline-block text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
+                className="mt-4 inline-block text-sm font-medium text-accent-full underline underline-offset-4 hover:text-accent-full/70"
               >
                 Read case study →
               </Link>
