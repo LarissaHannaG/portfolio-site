@@ -5,7 +5,7 @@ function Hero() {
       className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-4 py-24"
     >
       <p className="text-sm font-medium tracking-wide text-ink/60">
-        Hi! I'm Larissa, I am a
+        Hi! I'm Larissa.
       </p>
 
       <h1 className="mt-4 text-4xl font-medium tracking-tight text-ink sm:text-5xl">

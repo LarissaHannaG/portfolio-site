@@ -23,9 +23,50 @@ function About() {
         </p>
       </div>
 
-      <div className="mt-8 space-y-1 text-sm text-ink/60">
-        <p>Specialties: Design Systems, Web Accessibility.</p>
-        <p>Tools: Figma, React, TypeScript, and everything in between.</p>
+      <div className="mt-8">
+        <p className="text-sm font-medium tracking-wide text-ink/60">
+          Specialties
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {[
+            'Design Systems',
+            'Web Accessibility',
+            'Stakeholder & Change Management',
+          ].map((specialty) => (
+            <span
+              key={specialty}
+              className="bg-[#D6E4FF] px-2 py-1 text-sm text-ink"
+            >
+              {specialty}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <p className="text-sm font-medium tracking-wide text-ink/60">
+          Tools
+        </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {[
+            'React',
+            'JavaScript',
+            'TypeScript',
+            'HTML',
+            'CSS/SCSS',
+            'Tailwind',
+            'Storybook',
+            'Node.js',
+            'Figma',
+          ].map((tool) => (
+            <span
+              key={tool}
+              className="bg-[#D6E4FF] px-2 py-1 text-sm text-ink"
+            >
+              {tool}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   )
