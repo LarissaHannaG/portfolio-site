@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { projects } from '../data/projects'
+import { illustrations } from '../components/illustrations'
 
 function Section({ label, children }) {
   return (
@@ -15,10 +16,11 @@ function Section({ label, children }) {
 function CaseStudy() {
   const { slug } = useParams()
   const project = projects.find((p) => p.slug === slug)
+  const Illustration = illustrations[slug]
 
   if (!project) {
     return (
-      <section className="mx-auto max-w-3xl px-6 py-24">
+      <section className="mx-auto max-w-3xl px-4 py-24">
         <p className="text-lg text-ink/80">Project not found.</p>
         <Link
           to="/"
@@ -31,7 +33,7 @@ function CaseStudy() {
   }
 
   return (
-    <section className="mx-auto max-w-3xl px-6 py-24">
+    <section className="mx-auto max-w-3xl px-4 py-24">
       <Link
         to="/"
         className="text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
@@ -43,6 +45,12 @@ function CaseStudy() {
         {project.title}
       </h1>
       <p className="mt-1 text-sm text-ink/60">{project.subline}</p>
+
+      {Illustration && (
+        <div className="mt-8">
+          <Illustration className="w-full h-auto" />
+        </div>
+      )}
 
       {project.challenge && (
         <Section label="The Challenge">

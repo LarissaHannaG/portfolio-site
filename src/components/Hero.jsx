@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-6 py-24"
+      className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center px-4 py-24"
     >
       <p className="text-sm font-medium tracking-wide text-ink/60">
         Hi! I'm Larissa, I am a
@@ -12,9 +12,11 @@ function Hero() {
         Software Project Lead with hands-on design and engineering depth.
       </h1>
 
-      <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/80">
+      <p className="mt-6 text-lg leading-relaxed text-ink/80">
         I bridge technical, design, and business teams — not just in
-        conversation, but by building alongside them.
+        conversation,
+        <br />
+        but by building alongside them.
       </p>
 
       <div className="mt-10 flex items-center gap-8">
@@ -22,7 +24,7 @@ function Hero() {
           href="#projects"
           className="text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
         >
-          View Projects
+          View Selected Works
         </a>
         <a
           href="#contact"

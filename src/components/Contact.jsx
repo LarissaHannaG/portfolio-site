@@ -2,7 +2,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-3xl px-6 py-24"
+      className="mx-auto max-w-3xl px-4 py-24"
     >
       <p className="text-sm font-medium tracking-wide text-ink/60">
         Contact

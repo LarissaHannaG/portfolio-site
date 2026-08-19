@@ -100,7 +100,7 @@ export const projects = [
   },
   {
     slug: 'product-design-system-redesign',
-    title: 'Product & Design System Redesign',
+    title: 'Product Redesign',
     subline: 'UX Designer & Frontend Developer — Fasten Health, New York',
     teaser:
       "Owning the end-to-end redesign of Fasten Health's product and design system, from UX research through Angular implementation.",
