@@ -104,24 +104,26 @@ function CaseStudy() {
         </Section>
       )}
 
-      {project.skills.length > 0 && (
-        <Section label="Skills Used">
-          <div className="flex flex-wrap items-center text-sm text-ink/70">
-            {project.skills.map((skill, index) => (
-              <span key={skill} className="flex items-center">
-                {index > 0 && <span className="mx-2 text-ink/25">·</span>}
-                {skill}
-              </span>
-            ))}
-          </div>
-        </Section>
-      )}
-
       {project.clientLove && (
         <Section label="What Clients Loved">
           <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
             {project.clientLove}
           </p>
+        </Section>
+      )}
+
+      {project.skills.length > 0 && (
+        <Section label="Skills Used">
+          <div className="flex flex-wrap gap-2">
+            {project.skills.map((skill) => (
+              <span
+                key={skill}
+                className="bg-[#D6E4FF] px-2 py-1 text-sm text-ink"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </Section>
       )}
     </section>
