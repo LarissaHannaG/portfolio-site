@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-cream: #F7F3EC;
+  --color-ink: #2B2B2B;
+  --color-accent: #0057FF;
+}
+
 body {
-  @apply bg-white text-neutral-800 antialiased;
+  @apply bg-cream text-ink antialiased;
 }

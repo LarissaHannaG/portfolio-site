@@ -3,8 +3,8 @@ import { projects } from '../data/projects'
 
 function Section({ label, children }) {
   return (
-    <div className="mt-10 border-t border-neutral-200 pt-10">
-      <p className="text-sm font-medium tracking-wide text-neutral-500">
+    <div className="mt-10 border-t border-ink/10 pt-10">
+      <p className="text-sm font-medium tracking-wide text-ink/60">
         {label}
       </p>
       <div className="mt-4">{children}</div>
@@ -19,10 +19,10 @@ function CaseStudy() {
   if (!project) {
     return (
       <section className="mx-auto max-w-3xl px-6 py-24">
-        <p className="text-lg text-neutral-600">Project not found.</p>
+        <p className="text-lg text-ink/80">Project not found.</p>
         <Link
           to="/"
-          className="mt-4 inline-block text-sm font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-600"
+          className="mt-4 inline-block text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
         >
           ← Back
         </Link>
@@ -34,19 +34,19 @@ function CaseStudy() {
     <section className="mx-auto max-w-3xl px-6 py-24">
       <Link
         to="/"
-        className="text-sm font-medium text-neutral-900 underline underline-offset-4 hover:text-neutral-600"
+        className="text-sm font-medium text-accent underline underline-offset-4 hover:text-accent/70"
       >
         ← Back
       </Link>
 
-      <h1 className="mt-6 text-3xl font-medium tracking-tight text-neutral-900 sm:text-4xl">
+      <h1 className="mt-6 text-3xl font-medium tracking-tight text-ink sm:text-4xl">
         {project.title}
       </h1>
-      <p className="mt-1 text-sm text-neutral-500">{project.subline}</p>
+      <p className="mt-1 text-sm text-ink/60">{project.subline}</p>
 
       {project.challenge && (
         <Section label="The Challenge">
-          <p className="max-w-2xl text-lg leading-relaxed text-neutral-600">
+          <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
             {project.challenge}
           </p>
         </Section>
@@ -54,7 +54,7 @@ function CaseStudy() {
 
       {project.role && (
         <Section label="My Role">
-          <p className="max-w-2xl text-lg leading-relaxed text-neutral-600">
+          <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
             {project.role}
           </p>
         </Section>
@@ -62,7 +62,7 @@ function CaseStudy() {
 
       {project.approach && (
         <Section label="How I Approached the Problem">
-          <p className="max-w-2xl text-lg leading-relaxed text-neutral-600">
+          <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
             {project.approach}
           </p>
         </Section>
@@ -71,7 +71,7 @@ function CaseStudy() {
       {Array.isArray(project.outcome) ? (
         project.outcome.length > 0 && (
           <Section label="The Outcome">
-            <ul className="max-w-2xl list-disc space-y-2 pl-5 text-lg leading-relaxed text-neutral-600">
+            <ul className="max-w-2xl list-disc space-y-2 pl-5 text-lg leading-relaxed text-ink/80">
               {project.outcome.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -81,7 +81,7 @@ function CaseStudy() {
       ) : (
         project.outcome && (
           <Section label="The Outcome">
-            <p className="max-w-2xl text-lg leading-relaxed text-neutral-600">
+            <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
               {project.outcome}
             </p>
           </Section>
@@ -90,11 +90,11 @@ function CaseStudy() {
 
       {project.skills.length > 0 && (
         <Section label="Skills Used">
-          <div className="flex flex-wrap items-center text-sm text-neutral-600">
+          <div className="flex flex-wrap items-center text-sm text-ink/70">
             {project.skills.map((skill, index) => (
               <span key={skill} className="flex items-center">
                 {index > 0 && (
-                  <span className="mx-2 text-neutral-300">·</span>
+                  <span className="mx-2 text-ink/25">·</span>
                 )}
                 {skill}
               </span>
@@ -105,7 +105,7 @@ function CaseStudy() {
 
       {project.clientLove && (
         <Section label="What Clients Loved">
-          <p className="max-w-2xl text-lg leading-relaxed text-neutral-600">
+          <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
             {project.clientLove}
           </p>
         </Section>

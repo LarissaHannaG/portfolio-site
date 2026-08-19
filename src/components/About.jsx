@@ -4,11 +4,11 @@ function About() {
       id="about"
       className="mx-auto max-w-3xl px-6 py-24"
     >
-      <p className="text-sm font-medium tracking-wide text-neutral-500">
+      <p className="text-sm font-medium tracking-wide text-ink/60">
         About
       </p>
 
-      <div className="mt-6 space-y-6 text-lg leading-relaxed text-neutral-600">
+      <div className="mt-6 space-y-6 text-lg leading-relaxed text-ink/80">
         <p>
           With 9+ years in software, I've grown from hands-on frontend
           engineering and UX design work into leading both. Now at
@@ -34,7 +34,7 @@ function About() {
         </p>
       </div>
 
-      <div className="mt-8 space-y-1 text-sm text-neutral-500">
+      <div className="mt-8 space-y-1 text-sm text-ink/60">
         <p>Specialties: Design Systems, Web Accessibility.</p>
         <p>Tools: Figma, React, TypeScript, and everything in between.</p>
       </div>

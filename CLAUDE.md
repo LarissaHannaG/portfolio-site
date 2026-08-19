@@ -67,3 +67,10 @@
 - Small text, light visual separation, wraps naturally
 - Keep consistent with minimal aesthetic — no heavy borders or backgrounds
 
+## Color palette (updated)
+- Background: #F7F3EC (cream, not pure white)
+- Text: #2B2B2B (soft near-black, not pure black)
+- Accent (highlight color): #0057FF (electric blue) — use for links,
+  CTAs, buttons, and small accent details. Use sparingly and
+  deliberately, not as a dominant color — this is a highlight, not a
+  primary palette color.
