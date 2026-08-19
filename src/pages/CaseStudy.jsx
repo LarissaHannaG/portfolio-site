@@ -1,22 +1,48 @@
-import { Link, useParams } from 'react-router-dom'
-import { projects } from '../data/projects'
-import { illustrations } from '../components/illustrations'
+import { Link, useParams } from "react-router-dom";
+import { projects } from "../data/projects";
+import { illustrations } from "../components/illustrations";
 
-function Section({ label, children }) {
+function Section({ label, children, spacing = "mt-10 pt-10" }) {
   return (
-    <div className="mt-10 border-t border-ink/10 pt-10">
-      <p className="text-sm font-medium tracking-wide text-ink/60">
-        {label}
-      </p>
+    <div className={spacing}>
+      <p className="text-sm font-medium tracking-wide text-accent">{label}</p>
       <div className="mt-4">{children}</div>
     </div>
-  )
+  );
+}
+
+function AtAGlance({ outcome }) {
+  if (Array.isArray(outcome)) {
+    if (outcome.length === 0) return null;
+    return (
+      <div className="mt-6 flex flex-col items-start gap-3">
+        {outcome.map((item) => (
+          <span
+            key={item}
+            className="inline-block w-fit bg-[#0057FF] px-2 py-1 text-sm font-medium leading-relaxed text-white"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    );
+  }
+
+  if (!outcome) return null;
+
+  return (
+    <div className="mt-6">
+      <span className="inline-block w-fit bg-[#0057FF] px-2 py-1 text-sm font-medium leading-relaxed text-white">
+        Ongoing
+      </span>
+    </div>
+  );
 }
 
 function CaseStudy() {
-  const { slug } = useParams()
-  const project = projects.find((p) => p.slug === slug)
-  const Illustration = illustrations[slug]
+  const { slug } = useParams();
+  const project = projects.find((p) => p.slug === slug);
+  const Illustration = illustrations[slug];
 
   if (!project) {
     return (
@@ -29,7 +55,7 @@ function CaseStudy() {
           ← Back
         </Link>
       </section>
-    )
+    );
   }
 
   return (
@@ -41,19 +67,21 @@ function CaseStudy() {
         ← Back
       </Link>
 
-      <h1 className="mt-6 text-3xl font-medium tracking-tight text-ink sm:text-4xl">
-        {project.title}
-      </h1>
-      <p className="mt-1 text-sm text-ink/60">{project.subline}</p>
-
       {Illustration && (
         <div className="mt-8">
           <Illustration className="w-full h-auto" />
         </div>
       )}
 
+      <h1 className="mt-6 text-3xl font-medium tracking-tight text-ink sm:text-4xl">
+        {project.title}
+      </h1>
+      <p className="mt-1 text-sm text-ink/60">{project.subline}</p>
+
+      <AtAGlance outcome={project.outcome} />
+
       {project.challenge && (
-        <Section label="The Challenge">
+        <Section label="The Challenge" spacing="mt-10">
           <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
             {project.challenge}
           </p>
@@ -76,34 +104,12 @@ function CaseStudy() {
         </Section>
       )}
 
-      {Array.isArray(project.outcome) ? (
-        project.outcome.length > 0 && (
-          <Section label="The Outcome">
-            <ul className="max-w-2xl list-disc space-y-2 pl-5 text-lg leading-relaxed text-ink/80">
-              {project.outcome.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </Section>
-        )
-      ) : (
-        project.outcome && (
-          <Section label="The Outcome">
-            <p className="max-w-2xl text-lg leading-relaxed text-ink/80">
-              {project.outcome}
-            </p>
-          </Section>
-        )
-      )}
-
       {project.skills.length > 0 && (
         <Section label="Skills Used">
           <div className="flex flex-wrap items-center text-sm text-ink/70">
             {project.skills.map((skill, index) => (
               <span key={skill} className="flex items-center">
-                {index > 0 && (
-                  <span className="mx-2 text-ink/25">·</span>
-                )}
+                {index > 0 && <span className="mx-2 text-ink/25">·</span>}
                 {skill}
               </span>
             ))}
@@ -119,7 +125,7 @@ function CaseStudy() {
         </Section>
       )}
     </section>
-  )
+  );
 }
 
-export default CaseStudy
+export default CaseStudy;

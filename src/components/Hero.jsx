@@ -9,7 +9,7 @@ function Hero() {
       </p>
 
       <h1 className="mt-4 text-4xl font-medium tracking-tight text-ink sm:text-5xl">
-        Software Project Lead with hands-on design and engineering depth.
+        Software Project Lead with <span className="text-accent">hands-on</span> design and engineering depth.
       </h1>
 
       <p className="mt-6 text-lg leading-relaxed text-ink/80">

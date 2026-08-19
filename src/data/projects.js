@@ -30,15 +30,14 @@ export const projects = [
     teaser:
       'Designed a single dashboard that turned software quality data scattered across 20+ tools and 9 teams into one source of truth, cutting hours of work down to about a minute.',
     challenge:
-      "Across this automotive client's organization, vehicle software test data was scattered and disconnected — a company-wide problem affecting many departments. My team's engagement started with one department, where 9 teams' test data was spread across 20+ different tools and spreadsheets. There was no shared view of software quality within that department, and getting a report of the current software test maturity for a given week required hours of manual work collecting and summarizing data from each team individually.",
+      "Across this automotive client's organization, vehicle software test data was scattered and disconnected — a company-wide problem affecting many departments. My team's engagement started with one department, where 9 teams' test data was spread across 20+ different tools and spreadsheets. Each team tracked quality in its own disconnected tools, with no shared basis for release decisions and getting a report of the current software test maturity for a given week required hours of manual work collecting and summarizing data from each team individually.",
     role: 'I worked on-site in Gothenburg as both Design Lead and Frontend Lead on a small delivery team. On the design side, I owned the end-to-end design of a new dashboard application. On the frontend side, I planned the architecture and wrote much of the code myself, while mentoring two junior developers and one junior designer.',
     approach:
       "I ran extensive user research — interviews and close collaboration with stakeholders and users across the organization — to understand how differently each team thought about software quality and maturity. The real challenge wasn't visualizing data; it was reconciling genuinely different use cases and mental models into a single interface that worked for everyone, without oversimplifying any one team's needs.",
     outcome: [
-      'Consolidated 20+ scattered tools and spreadsheets, across 9 teams in one department, into one unified dashboard',
+      'Consolidated 20+ scattered tools and spreadsheets into one unified dashboard',
       'Cut data collection and reporting from hours of manual work per team to about a minute',
-      'Mentored two junior developers and one junior designer through the build',
-      "Tool was actively adopted and used across all 9 teams in the department — an initial, successful step toward the client's larger goal of unifying test data visibility company-wide",
+      "Tool is actively adopted and used across all 9 teams in the department",
     ],
     skills: [
       'UX research',
@@ -70,10 +69,11 @@ export const projects = [
     approach:
       "The hardest part wasn't technical — it was that no team wanted to give up its own tools and ways of working. I spent significant time building direct relationships with the leads of all 30+ teams, understanding what each of them actually needed and where their resistance was coming from. Rather than mandating adoption, I used those relationships to build the design system alongside the teams and give them real influence over its direction, through an active community they could actually shape. That sense of ownership, not a top-down rollout, is what got every team on board.",
     outcome: [
-      'All 30+ teams fully migrated to the design system',
-      'Cut time to implement new features by 60%',
-      'Success drew interest beyond the original department, leading to a second engagement',
-      'Led 18 more teams through migration there, cutting time-to-production by 50%',
+      'Led delivery of large scale design system from scratch',
+      'Achieved 100% design system adoption across 30+ teams',
+      'Cut time to implement new UI features by 60%',
+      'Success drew interest beyond original department, leading to second engagement',
+      'Led 18 teams through migration in second department, cutting time-to-production by 50%',
       "Became the client's standard design system for all internal B2B applications, company-wide",
     ],
     skills: [
@@ -128,7 +128,7 @@ export const projects = [
     slug: 'accessibility-upskilling-initiative',
     title: 'Accessibility Upskilling Initiative',
     subline:
-      'Accessibility Community Co-Founder & Program Lead — Thoughtworks, Internal Initiative',
+      'Accessibility Community Co-Founder & Training Program Lead — Thoughtworks, Internal Initiative',
     teaser:
       "Co-founded Thoughtworks' accessibility community from scratch — built training that's upskilled 200+ people and become standard onboarding, and helped 20 colleagues earn official accessibility certification.",
     challenge:
@@ -137,9 +137,10 @@ export const projects = [
     approach:
       'I created a self-paced accessibility training program from scratch, and separately built and led a learning group specifically to guide colleagues toward official IAAP (International Association of Accessibility Professionals) certification — giving Thoughtworks credible, verifiable accessibility expertise to bring to clients.',
     outcome: [
-      'Self-paced training upskilled 200+ Thoughtworkers, and is now part of standard onboarding for all new joiners globally',
+      'Self-curated accessibility training upskilled 200+ Thoughtworkers (and clients)',
+      'Accessibility training is now part of standard onboarding for all new joiners globally',
       'Guided 20 colleagues to official IAAP certification through the learning group',
-      'Became the first Thoughtworker globally to obtain the WAS (Web Accessibility Specialist) certification',
+      'Became first Thoughtworker globally to obtain IAAP WAS (Web Accessibility Specialist) certification',
     ],
     skills: [
       'Training design',

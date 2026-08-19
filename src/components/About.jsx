@@ -21,17 +21,6 @@ function About() {
           freelancing part-time for a health tech startup, leading their
           design system and frontend rebuild.
         </p>
-
-        <p>
-          One client credited the successful adoption of a shared
-          software-quality standard across nine competing teams directly
-          to my stakeholder alignment and change management. The problem:
-          each team tracked quality in its own disconnected spreadsheets,
-          with no shared basis for release decisions. I led the design,
-          research, and stakeholder work behind a unified dashboard —
-          turning nine conflicting definitions of "quality" into one
-          standard the whole organization actually adopted.
-        </p>
       </div>
 
       <div className="mt-8 space-y-1 text-sm text-ink/60">
